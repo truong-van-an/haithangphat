@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-top{
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    background: url(https://homplasgo.vn/wp-content/uploads/2020/08/vnt_0002.png.webp) center right/ cover no-repeat scroll;
+}
+.footer_container{
+    padding: 20px 0px;
+    background: url(https://homplasgo.vn/wp-content/uploads/2020/08/vnt_0002.png.webp) center right/ cover no-repeat scroll;
+
+}
+.enterprise, .phone{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+}
+.icon-fb, .icon-tiktok{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.header-bottom{
+    background-color: #fcd605;
+    display: flex;
+    padding: 10px;
+}
+.toggle{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.header-bottom> span{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navigation{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4E4E50;
+    width: 90%;
+    height: 100vh;
+    z-index: 15;
+}
+.navigation.active{
+    display: block;
+}
+.navigation .nav{
+    display: flex;
+    flex-direction: column;
+}
+.navigation .nav li{
+    list-style: none;
+}
+.navigation .nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.menucon{
+    padding: 0px 20px;
+}
+.menucon li{
+    color: #fcd605;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.fa-xmark{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+section .slide{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bgr_yellow{
+    position: absolute;
+    background: rgba(252,214,5, 0.25);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.home_product{
+    padding: 30px 0px;
+}
+.home_product .title, .home_camhung .title{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-pagination-bullet{
+    width: 20px!important;
+    height: 4px!important;
+    border-radius: 0!important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #fff!important;
+}
+footer{
+    margin-top: 20px;
+}
+.footer{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.footer_title{
+    font-size: 23px;
+    font-weight: bold;
+}
+.model{
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.model.active{
+    opacity: 1;
+    display: flex;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.model .image{
+    width: 90%;
+}
